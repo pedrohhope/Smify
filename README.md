@@ -1,4 +1,4 @@
-# Smify
+# Smify <img src="./images/play-button.png"></img>
 <p>Nesse projeto eu usei todas a minhas habilidades em implementação de JSON, Todos os dados foram colocados em um JSON.</p>
 <p>Meu desafio era fazer com que eles aparecerem na tela.
 Realizarem todas as suas funcionalidades que são : PLAY, STOP e FILTROS para cada PlayList.</p>
