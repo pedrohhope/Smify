@@ -17,7 +17,7 @@ Realizarem todas as suas funcionalidades que são : PLAY, STOP e FILTROS para ca
 <li>CSS
 <li>SASS
 <li>JavaScript
-<li>Json
+<li>JSON
 <li>Git
 <li>Github
 <li>Node.js
