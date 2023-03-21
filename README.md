@@ -1,3 +1,3 @@
 # Smify
  
-![](./assets/github-image/github-image.png)
+![](./assets/github-image.png)
