@@ -77,6 +77,7 @@
             "audio": "./music/Imagine_Dragons_Bones.mp3"
           }
 
+
         ]
       }
     },
@@ -91,32 +92,38 @@
             {
               "title": "MIDDLE OF THE NIGHT",
               "artist": "Elley Duhé",
-              "image": "./images/musics/MIDDLE-NIGHT.jpg"
+              "image": "./images/musics/MIDDLE-NIGHT.jpg",
+              "audio": "./music/Elley_Duhe_Middle_Of_The_Night.mp3"
+              
             },
   
             {
-              "title": "G-Eazy & Halsey",
-              "artist": "Him & I",
-              "image": "./images/musics/artworks-000462345402-5lhgdc-t500x500.jpg"
+              "title": "PARADISE",
+              "artist": "Coldplay",
+              "image": "./images/musics/Coldplay_-_Paradise.jpg",
+              "audio": "./music/Coldplay_Paradise.mp3"
             },
 
             
             {
                 "title": "Habits",
                 "artist": "Tove Lo",
-                "image": "./images/musics/Tove_Lo_Habits.png"
+                "image": "./images/musics/Tove_Lo_Habits.png",
+                "audio": "./music/Tove_Lo_-_Habits.mp3"
             },
 
             {
               "title": "HOPE",
               "artist": "NF",
-              "image": "./images/musics/NF-HOPE.jpg"
+              "image": "./images/musics/NF-HOPE.jpg",
+              "audio": "./music/NF_-_HOPE.mp3"
             },
 
             {
               "title": "VIVA LA VIDA",
               "artist": "COLDPLAY",
-              "image": "./images/musics/9145yafeO2L._AC_SL1500_.jpg"
+              "image": "./images/musics/9145yafeO2L._AC_SL1500_.jpg",
+              "audio": "./music/Coldplay_-_Viva_La_Vida.mp3"
           }
           ]
         }

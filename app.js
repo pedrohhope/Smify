@@ -46,9 +46,9 @@ async function loadDisplay(){
             <div class="box">
                 <div class="box-container">
                     <img src="${music.image}" alt="" class="music-image">
-                    <div class="play-button" id="${music.title}-play" onclick="audioplay(${music.title})"><img src="images/play-button.png" alt=""></div>
-                    <div class="stop-button" id="${music.title}-stop" onclick="audiostop(${music.title})"><img src="images/stop-button.png" alt=""></div>
-                    <audio src="${music.audio}" id="${music.title}"></audio>
+                    <div class="play-button" id="${music.title.replace(/\s/g, '')}-play" onclick="audioplay(${music.title.replace(/\s/g, '')})"><img src="images/play-button.png" alt=""></div>
+                    <div class="stop-button" id="${music.title.replace(/\s/g, '')}-stop" onclick="audiostop(${music.title.replace(/\s/g, '')})"><img src="images/stop-button.png" alt=""></div>
+                    <audio src="${music.audio}" id="${music.title.replace(/\s/g, '')}"></audio>
                     <h2>${music.title}</h2>
                     <p>${music.artist}</p>
                 </div>
