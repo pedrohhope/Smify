@@ -128,52 +128,26 @@ function smoothScrollTo(endX, endY, duration) {
 }
 
 
+//ultimo audio tocado
+let lastaudio = null
 
+function stopLastAudio() {
+    const playbutton = document.getElementById(`${lastaudio.getAttribute('id')}-play`)
+    const stopbutton = document.getElementById(`${lastaudio.getAttribute('id')}-stop`)
 
-function audioplay(song) {
-    const playbutton = document.getElementById(`${song.getAttribute('id')}-play`)
-    const stopbutton = document.getElementById(`${song.getAttribute('id')}-stop`)
+    stopbutton.style.display = 'none'
+    playbutton.style.display = 'flex'
+    lastaudio.pause();
+    
+}
+function playNewAudio(element) {
+    const playbutton = document.getElementById(`${element.getAttribute('id')}-play`)
+    const stopbutton = document.getElementById(`${element.getAttribute('id')}-stop`)
 
     stopbutton.style.display = 'flex'
     playbutton.style.display = 'none'
-    
 
-    const audio = document.querySelectorAll('audio')
-
-    audio.forEach((musics) =>{
-        if(musics.play()){
-            musics.pause()
-        }
-        var elms = document.querySelectorAll("*[style]");
-        elms.forEach((a) =>{
-            if(a.outerHTML.search('flex') > 0){
-                const musicname = a.id.split('-')
-                if(musicname[0] !== song.id){
-                    let play
-                    let stop
-                    if(musicname[1] == "stop"){
-                        stop = a.id.toString()
-                        play = musicname[0] + "-play"
-                    }
-                    if(musicname[1] == "play"){
-                        play = a.id.toString()
-                        stop = musicname[0] + "-stop"
-                    }
-
-                    const playbtn = document.getElementById(play)
-                    const stopbtn = document.getElementById(stop)
-
-    
-                    stopbtn.style.display = 'none'
-                    playbtn.style.display = 'flex'
-        
-                }
-            }
-        })
-    })
-
-    song.play()
-
+    element.play()
 }
 
 function audiostop(song){
@@ -183,13 +157,20 @@ function audiostop(song){
 
     stopbutton.style.display = 'none'
     playbutton.style.display = 'flex'
-    
-    
-    
-    const audio = document.querySelectorAll('audio')
 
     song.pause()
 }
+
+
+function audioplay(song) {
+    if (lastaudio != null) {
+        stopLastAudio();
+    }
+    lastaudio = song;
+
+    playNewAudio(song);
+}
+
 
 
 loadDisplay() 
