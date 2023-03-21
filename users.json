@@ -1,0 +1,124 @@
+[
+    {
+      "name": "Pedro",
+      "playlist": {
+        "title": "Minha playlist",
+        "description": "Uma playlist com minhas músicas favoritas",
+        "musics": [
+          {
+            "title": "ALONE",
+            "artist": "MARSHMELLO",
+            "image": "./images/musics/Alone_Marshmello_cover.jpg",
+            "audio": "./music/Marshmello_Alone_Official_Music.mp3"
+          },
+
+          {
+            "title": "FADED",
+            "artist": "ALAN WALKER",
+            "image": "./images/musics/alam-walker-faded-song-lyrics-750750.jpg",
+            "audio": "./music/Alan_Walker_Faded.mp3"
+          },
+          {
+            "title": "STAY",
+            "artist": "THE KID LAROI",
+            "image": "./images/musics/artworks-q4s6yMVUKHklg07q-WiXfwg-t500x500.jpg",
+            "audio": "./music/The_Kid_LAROI_Justin_Bieber_STAY.mp3"
+          },
+
+          {
+            "title": "MOOD",
+            "artist": "24KGOLDN",
+            "image": "./images/musics/24kGoldn_part_Iann_Dior_-_Mood.png",
+            "audio": "./music/24kGoldn_Mood.mp3"
+          },
+
+          {
+            "title": "ENEMY",
+            "artist": "IMAGINE DRAGONS",
+            "image": "./images/musics/Enemy_Imagine_Dragons_JID_capa.jpg",
+            "audio": "./music/Imagine_Dragons_x_J.I.D_Enemy.mp3"
+        }
+
+        ]
+      }
+    },
+
+    {
+      "name": "Nathan",
+      "playlist": {
+        "title": "Minha playlist",
+        "description": "Uma playlist com minhas músicas favoritas",
+        "musics": [
+          {
+            "title": "RUNAWAY",
+            "artist": "GALANTIS",
+            "image": "./images/musics/Runaway_(U_&_I).jpg",
+            "audio": "./music/Galantis_Runaway.mp3"
+          },
+
+          {
+            "title": "GOODBYE",
+            "artist": "POST MALONE",
+            "image": "./images/musics/Goodbyes_-_Post_Malone.png",
+            "audio": "./music/Post_Malone_Goodbyes.mp3"
+          },
+
+          {
+            "title": "LOVELY",
+            "artist": "BILLIE EILISH",
+            "image": "./images/musics/MV5BYTRkNGMzMjgtY2MwZC00M2E1LTg5NTktYmUwNDg0NDM3YmUyXkEyXkFqcGdeQXVyMTI4Nzg5MDA@._V1_FMjpg_UX1000_.jpg",
+            "audio":"./music/Billie_Eilish_Lovely.mp3"
+          },
+
+          {
+            "title": "BONES",
+            "artist": "IMAGINE DRAGONS",
+            "image": "./images/musics/Imagine_Dragons_Bones_cover.jpg",
+            "audio": "./music/Imagine_Dragons_Bones.mp3"
+          }
+
+        ]
+      }
+    },
+
+
+    {
+        "name": "Fabricio",
+        "playlist": {
+          "title": "Minha playlist",
+          "description": "Uma playlist com minhas músicas favoritas",
+          "musics": [
+            {
+              "title": "MIDDLE OF THE NIGHT",
+              "artist": "Elley Duhé",
+              "image": "./images/musics/MIDDLE-NIGHT.jpg"
+            },
+  
+            {
+              "title": "G-Eazy & Halsey",
+              "artist": "Him & I",
+              "image": "./images/musics/artworks-000462345402-5lhgdc-t500x500.jpg"
+            },
+
+            
+            {
+                "title": "Habits",
+                "artist": "Tove Lo",
+                "image": "./images/musics/Tove_Lo_Habits.png"
+            },
+
+            {
+              "title": "HOPE",
+              "artist": "NF",
+              "image": "./images/musics/NF-HOPE.jpg"
+            },
+
+            {
+              "title": "VIVA LA VIDA",
+              "artist": "COLDPLAY",
+              "image": "./images/musics/9145yafeO2L._AC_SL1500_.jpg"
+          }
+          ]
+        }
+    }
+]

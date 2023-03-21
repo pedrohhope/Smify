@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+$main-color : #121212;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: $main-color;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+
+header{
+    height: 100vh;
+}
+
+.menu{
+    display: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 15%;
+    gap: 10px;
+    height: 200vh;
+    background-color: black;
+    box-shadow: 1px 10px 5px 3px rgba(27, 27, 27, 0.438);
+    color: white;
+
+    .home-button{
+        position: fixed;
+        top: 10%;
+        img{
+            width: 30%;
+        }
+    }
+    img{
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    h1{
+        margin-left: 1.25rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        margin: auto{
+            bottom: 1.25rem;
+        };
+        img{
+            width: 10%;
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: fixed;
+        margin-top: 10%;
+        li{
+            list-style: none;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                margin-left: 25px;                
+            }
+        }
+    }
+}
+
+.separator{
+    background-color: #504e4e65;
+    padding: auto{
+        top: 0.5px;
+        bottom: 0.5px;
+        right: 100%;
+    };
+}
+
+.users-container{
+    color: white;
+    margin: 30px;
+    animation-name: containerflex;
+    animation-duration: 2s;
+
+    h1{
+        margin-bottom: 1.25rem;
+    }
+
+    .boxes::-webkit-scrollbar{
+        width: 100px;
+    }
+
+    .boxes::-webkit-scrollbar-track {
+        background: #504e4e2c;
+        padding: 2px;
+    }
+    
+    .boxes::-webkit-scrollbar-thumb {
+        background-color: #000;
+      }
+
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-flow: row nowrap;
+        overflow-x: auto;
+        max-width: 80vw;
+        min-width: none;
+        
+
+        .box{
+            display: flex;
+            max-width: 300px;
+            max-height: 600px;
+            border-radius: 0.625rem;
+            background-color: #33323236;
+            margin-bottom: 1.25rem;
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.185);
+            transition: 0.5s;
+            .box-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                min-width: 13rem;
+                max-width: 13rem;
+                margin: 20px;
+                .music-image{
+                    max-width: 10rem;
+                    max-height: 100%;
+                    min-height: 9.375rem;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.274);
+                }
+ 
+            }
+        }
+    }
+
+    .box:hover{
+            background-color: rgba(128, 128, 128, 0.295);
+        .play-button{
+            opacity: 1;
+            bottom: 30px;
+        }
+
+        .stop-button{
+            opacity: 1;
+            bottom: 30px;
+        }
+    }
+
+    .play-button{
+        background-color: white;
+        position: relative;
+        opacity: 0; 
+        bottom: 10px;
+        left: 120px;
+        border-radius: 50%;
+        transition: 0.5s;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img{
+            width: 50%;
+        }
+    }
+
+    .stop-button{
+        background-color: white;
+        position: relative;
+        opacity: 0; 
+        bottom: 10px;
+        left: 120px;
+        border-radius: 50%;
+        transition: 0.5s;
+        width: 60px;
+        height: 60px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img{
+            width: 50%;
+        }
+    }
+}
+
+
+@media (max-width: 1321px) {
+    .menu{
+        display: none;
+        position: absolute;
+        margin-left: 10px;
+        top: 20px;
+        left: 10px;
+        width: 10%;
+        height: 5%;
+        img{
+            max-width: 100%;
+            cursor: pointer;
+            color: white;
+        }
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+
+        .home-button{
+            margin-top: 10%;
+            position: relative;
+            img{
+                width: 10%;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            position: relative;
+            bottom: 20%;
+            margin-top: 50%;
+            width: 100%;
+        }
+    }
+
+    .close-menu{
+        display: none;
+        position: relative;
+        right: -800%;
+    }
+
+    .open-menu{
+        display: none;
+    }
+
+
+    .active{
+        display: flex;
+    }
+
+    .users-container{
+        margin-top: 4.125rem;
+        h1{
+            font-size: 16px;
+        }
+
+        .boxes{
+            height: 300px;
+            overflow-x: auto;
+            
+            
+            .box{
+                height: 240px;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+
+            .box-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+                .play-button{
+                    left: 1.875rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+
+                .stop-button{
+                    left: 1.875rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+                
+                .box-container{
+                    h2{
+                        font-size: 10px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                    
+                .music-image{
+                    max-width: 5rem;
+                    max-height: 40%;
+                    min-height: 2rem;
+                }
+            }
+            }
+        }
+    }
+
+}
