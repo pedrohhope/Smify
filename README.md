@@ -6,8 +6,7 @@ Realizarem todas as suas funcionalidades que são : PLAY, STOP e FILTROS para ca
 ![](./assets/github-image.png)
 
 
-<h1>Welcome! 👋</h1>
-<h2>The challenge</h2>
+<h1>Welcome! The challenge 👋</h1>
 <p>Link para testar o projeto : <a href="https://smify-portifolio.netlify.app/">Smify</a> - RESPONSIVO ✔️</p>
 
 <ul>
