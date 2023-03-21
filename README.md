@@ -1,5 +1,5 @@
 # Smify
-Nesse projeto eu usei todas a minhas habilidades em implementação de JSON, Todos os dados foram colocados em um JSON meu desafio era fazer eles aparecerem na tela, e fazer eles realizarem todas as suas funcionalidades que são : play, stop, e filtros para cada PlayList.
+Nesse projeto eu usei todas a minhas habilidades em implementação de JSON, Todos os dados foram colocados em um JSON. Meu desafio era fazer eles aparecerem na tela, e fazer eles realizarem todas as suas funcionalidades que são : play, stop, e filtros para cada PlayList.
  
 ![](./assets/github-image.png)
 
